@@ -2,12 +2,8 @@
 
 .navbar{
     background: #3d3a3a;
-    color: rgb(255, 196, 0);
     font-size: 30px;
     font-family: 'Cinzel Decorative', cursive;
-    text-shadow:    0.5px 0px 0px rgb(179, 108, 1),
-                    1px 0px 0px rgb(0, 0, 0);
-                    
 }
 
 .navbar ul {
@@ -22,3 +18,15 @@
     text-transform: uppercase;
     padding: 1vw;
 }
+
+.navbar ul li a {
+    text-decoration: none;
+    color: rgb(255, 196, 0);
+    text-shadow:    0.5px 0px 0px rgb(179, 108, 1),
+                    1px 0px 0px rgb(0, 0, 0);
+}
+
+.navbar ul li a:hover{
+    color: crimson;
+}
+
