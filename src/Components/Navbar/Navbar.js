@@ -9,15 +9,15 @@ export default function Navbar() {
             <ul>
 
                 <li className="nav-link">
-                    <Link to="/">Home</Link> 
+                    <Link to="/">Accueil</Link> 
                 </li>
 
                 <li className="nav-link">
-                    <Link to="/Characters">Characters</Link>
+                    <Link to="/Characters">Personnages</Link>
                 </li>
 
                 <li className="nav-link">
-                    <Link to="/Armors">Armors</Link>
+                    <Link to="/Armors">Armures</Link>
                 </li>
 
             </ul>

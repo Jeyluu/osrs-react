@@ -1,0 +1,41 @@
+.card {
+    max-width: 450px;
+    min-width: 450px;
+    padding: 10px;
+    margin: 20px 10px;
+    cursor: pointer;
+    min-height: 200px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: darkgray;
+    overflow: hidden;
+    box-shadow: rgb(3, 3, 3) 0px 20px 30px -10px;
+}
+
+.card img{
+    transition: ease-out 0.8s;
+}
+
+.card:hover img {
+    transform: scale(1.08);
+}
+
+.card h2 {
+    font-size: 25px;
+    margin: 15px 0;
+    text-align: center;
+}
+
+.card h3{
+    font-size:15px;
+    font-style: italic;
+    padding: 5px 15px;
+    color: rgb(71, 71, 71);
+}
+
+.card p {
+    font-size: 18px;
+    padding: 15px;
+}

@@ -21,6 +21,7 @@ function App() {
         <Route path="/Characters" exact component={Characters} />
         <Route path="/Armors" exact component={Armors} />
       </Switch>
+      
     <Footer/>
 
   </Router>

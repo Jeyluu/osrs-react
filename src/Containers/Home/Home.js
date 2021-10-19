@@ -1,6 +1,8 @@
 import React from 'react'
 import './Home.css'
 import banner from '../Assets/testbaner.png'
+import Card from '../../Components/Card/Card'
+import groupIronman from "../Assets/articleGroupIronman.png"
 
 
 export default function Home() {
@@ -11,12 +13,42 @@ export default function Home() {
         <>
 
             <img src={banner} alt="banner-osrs" className="banner" />
-            <h1>Welcome to OSRunescape</h1>
 
-            {/* <div className="description">
-                <h2 className="des-title">Game Introduction</h2>
-                <p className="des-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla libero veritatis earum tempore maiores sunt eaque laborum tenetur! Similique, soluta quia. Hic libero provident veritatis temporibus doloribus fugit sed reiciendis adipisci mollitia, ut placeat labore culpa, in nisi laudantium deleniti excepturi accusamus inventore porro nobis vitae fugiat et voluptatibus. Totam voluptatibus amet voluptates eum iure, rem aliquam impedit repellendus. Tempora ratione similique nam! Quae libero mollitia cum facere fuga similique voluptatibus molestiae dignissimos vero. Repellat eum debitis minima veniam at voluptatum possimus ipsa quod ea magni architecto, repudiandae expedita beatae consectetur quaerat natus corrupti dicta harum ut? Labore incidunt esse numquam, molestias maiores temporibus ipsam aliquid! Et, quibusdam iusto ea, eum molestiae labore unde blanditiis soluta molestias nostrum vitae rerum, consequatur qui adipisci accusantium minima reprehenderit. Minima fugit dignissimos rem sunt numquam ipsam veritatis, error, praesentium minus laudantium natus consequatur consequuntur repellendus iure expedita facere earum fugiat veniam ullam! Quod!</p>
-            </div> */}
+            <div className="description">
+                <h2 className="des-title">Bienvenue sur OSRune</h2>
+                <p className="des-body">
+                Revivez le système de mise à niveau difficile et le PvP à risque du plus grand MMO de style rétro. Jouez avec des millions d'autres joueurs dans cet héritage du jeu en ligne où la communauté contrôle le développement afin que le jeu soit vraiment ce que vous voulez qu'il soit !</p>
+            </div>
+
+            <h2 className="home-title">Nouveauté & Mises à jours</h2>
+
+            <div className="container-cards">
+                
+                <Card>
+                    <img src={groupIronman} alt="GroupIronman" />
+                    <h2>Groupe Ironman</h2>
+                    <h3>19 Octobre 2021 - Mise à jours jeu</h3>
+                    <p>Le mode permet à 2 à 5 joueurs de se regrouper avec toutes les restrictions normales du mode Ironman (ou du mode Hardcore Ironman). Seuls les comptes nouvellement créés peuvent activer le mode Group Ironman. Les comptes existants, y compris ceux qui sont déjà des comptes Ironman, ne peuvent pas rejoindre un groupe.
+                    Les joueurs qui rejoignent un groupe avant sa création ont le statut Prestige, ce qui leur permet de s'affranchir des restrictions commerciales.</p>
+                    
+                </Card>
+                <Card>
+                    <img src={groupIronman} alt="GroupIronman" />
+                    <h2>Groupe Ironman</h2>
+                    <h3>19 Octobre 2021 - Mise à jours jeu</h3>
+                    <p>Le mode permet à 2 à 5 joueurs de se regrouper avec toutes les restrictions normales du mode Ironman (ou du mode Hardcore Ironman). Seuls les comptes nouvellement créés peuvent activer le mode Group Ironman. Les comptes existants, y compris ceux qui sont déjà des comptes Ironman, ne peuvent pas rejoindre un groupe.
+                    Les joueurs qui rejoignent un groupe avant sa création ont le statut Prestige, ce qui leur permet de s'affranchir des restrictions commerciales.</p>
+                    
+                </Card>
+                <Card>
+                    <img src={groupIronman} alt="GroupIronman" />
+                    <h2>Groupe Ironman</h2>
+                    <h3>19 Octobre 2021 - Mise à jours jeu</h3>
+                    <p>Le mode permet à 2 à 5 joueurs de se regrouper avec toutes les restrictions normales du mode Ironman (ou du mode Hardcore Ironman). Seuls les comptes nouvellement créés peuvent activer le mode Group Ironman. Les comptes existants, y compris ceux qui sont déjà des comptes Ironman, ne peuvent pas rejoindre un groupe.
+                    Les joueurs qui rejoignent un groupe avant sa création ont le statut Prestige, ce qui leur permet de s'affranchir des restrictions commerciales.</p>
+                    
+                </Card>
+            </div>
         </>
     )
 }

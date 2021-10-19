@@ -1,5 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Antic&family=Cinzel+Decorative&display=swap');
 
+.home-title{
+    font-family: 'Cinzel Decorative', cursive;
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 2vh;
+    color: rgb(255, 196, 0);
+    text-shadow:    0.5px 0px 0px rgb(179, 108, 1),
+                    4px 0px 4px rgb(0, 0, 0);
+}
+
+.home-title::after{
+    display: block;
+    content: " ";
+    height: 2px;
+    width: 20vw;
+    margin: 0 auto;
+    border-radius: 2px;
+    background-color: rgb(255, 196, 0);
+    box-shadow: 0 0.5px 0 rgb(179, 108, 1),
+                0 1px 0 rgb(0, 0, 0);
+}
+
 .banner {
     width: 100%;
 }
@@ -7,13 +29,14 @@
 .description{
     
     margin: 2vw 20vw;
-    padding: 4vw;
+    padding: 2vw;
     border-radius: 10px;
     background: rgba(0, 0, 0, 0.479);
 }
 
 .des-title{
     font-family: 'Cinzel Decorative', cursive;
+    text-align: center;
     font-size: 40px;
     margin-bottom: 2vh;
     color: rgb(255, 196, 0);
@@ -26,7 +49,7 @@
     display: block;
     content: " ";
     height: 2px;
-    width: 40vw;
+    width: 20vw;
     margin: 0 auto;
     border-radius: 2px;
     background-color: rgb(255, 196, 0);
@@ -37,4 +60,12 @@
 .des-body{
     font-family: 'Antic', sans-serif;
     color: #fff;
+}
+
+/* **************************** News & Update **************************** */
+
+.container-cards{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
