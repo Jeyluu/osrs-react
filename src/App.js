@@ -1,7 +1,9 @@
-import react from 'react';
 import './App.css';
-import Home from './Containers/Home/Home';
 import Nav from './Components/Navbar/Navbar';
+import Home from './Containers/Home/Home';
+import Characters from './Containers/Characters/Characters';
+import Armors from './Containers/Armors/Armors'
+import Footer from './Components/Footer/Footer';
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
 
 
@@ -9,20 +11,20 @@ function App() {
 
 
   return (
-    <div className="App">
+    <>
+  <Router>
 
-      <Router>
+    <Nav/>
 
-        <Nav />
+      <Switch>
+        <Route path="/" exact component={Home} />
+        <Route path="/Characters" exact component={Characters} />
+        <Route path="/Armors" exact component={Armors} />
+      </Switch>
+    <Footer/>
 
-        <Switch>
-          <Route path="/" excact />
-          <Route path="/characters" excact  />
-          <Route path="/armors" excact  />
-        </Switch>
-        <Home />
-      </Router>
-    </div>
+  </Router>
+    </>
   );
 }
 
