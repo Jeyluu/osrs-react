@@ -1,0 +1,19 @@
+.character-card{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.standard {
+    position: relative;
+    border: 1px solid yellow;
+    margin: 20px auto;
+    min-width: 400px;
+    text-align: center;
+}
+
+.show-btn{
+    position: absolute;
+    top: 5px;
+    right: 2px;
+}

@@ -5,6 +5,7 @@ import Characters from './Containers/Characters/Characters';
 import Armors from './Containers/Armors/Armors'
 import Footer from './Components/Footer/Footer';
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
+import { IconContext } from "react-icons"
 
 
 function App() {
@@ -14,16 +15,19 @@ function App() {
     <>
   <Router>
 
-    <Nav/>
+    <IconContext.Provider value={{style: {verticalAlign: 'middle'}}}>
 
-      <Switch>
-        <Route path="/" exact component={Home} />
-        <Route path="/Characters" exact component={Characters} />
-        <Route path="/Armors" exact component={Armors} />
-      </Switch>
+      <Nav/>
+
+        <Switch>
+          <Route path="/" exact component={Home} />
+          <Route path="/Characters" exact component={Characters} />
+          <Route path="/Armors" exact component={Armors} />
+        </Switch>
       
-    <Footer/>
+      <Footer/>
 
+  </IconContext.Provider>
   </Router>
     </>
   );

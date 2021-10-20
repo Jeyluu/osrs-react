@@ -1,6 +1,16 @@
 
 .foot{
     background: #1d1c1c;
+    
+}
+
+.foot ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.foot ul li{
+    list-style-type: none;
 }
 
 .links{
